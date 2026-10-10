@@ -24,8 +24,7 @@ st.markdown("""
 # ==========================================
 # 🔒 セキュリティ：パスワード認証機能
 # ==========================================
-APP_PASSWORD = "tsukubatennis360" # ←★好きなパスワードに変更してください
-
+APP_PASSWORD = st.secrets["APP_PASSWORD"]
 if "authenticated" not in st.session_state:
     st.session_state.authenticated = False
 
